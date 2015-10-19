@@ -9,10 +9,23 @@
 /* Begin PBXBuildFile section */
 		8214BD711BD526C800DA3B4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD701BD526C800DA3B4F /* main.m */; };
 		8214BD741BD526C800DA3B4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD731BD526C800DA3B4F /* AppDelegate.m */; };
-		8214BD771BD526C800DA3B4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD761BD526C800DA3B4F /* ViewController.m */; };
 		8214BD7A1BD526C800DA3B4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8214BD781BD526C800DA3B4F /* Main.storyboard */; };
 		8214BD7C1BD526C800DA3B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8214BD7B1BD526C800DA3B4F /* Assets.xcassets */; };
 		8214BD7F1BD526C800DA3B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8214BD7D1BD526C800DA3B4F /* LaunchScreen.storyboard */; };
+		8214BD871BD56C4200DA3B4F /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8214BD861BD56C4200DA3B4F /* Create.storyboard */; settings = {ASSET_TAGS = (); }; };
+		8214BD891BD56C5600DA3B4F /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8214BD881BD56C5600DA3B4F /* User.storyboard */; settings = {ASSET_TAGS = (); }; };
+		8214BD8F1BD56EB100DA3B4F /* SelfieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD8E1BD56EB100DA3B4F /* SelfieTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8214BD921BD56EFA00DA3B4F /* SelfieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD911BD56EFA00DA3B4F /* SelfieDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8214BD951BD5707A00DA3B4F /* SelfieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD941BD5707A00DA3B4F /* SelfieTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		8214BD981BD5781D00DA3B4F /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD971BD5781D00DA3B4F /* CaptureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8214BD9B1BD5782F00DA3B4F /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD9A1BD5782F00DA3B4F /* FilterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8214BD9E1BD5784800DA3B4F /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BD9D1BD5784800DA3B4F /* SubmitViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8214BDA11BD578A200DA3B4F /* FilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BDA01BD578A200DA3B4F /* FilterDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		8214BDA61BD579AC00DA3B4F /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214BDA51BD579AC00DA3B4F /* FilterCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		82A674671BD580AF00465CDD /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A674661BD580AF00465CDD /* ChoiceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82A6746A1BD580CF00465CDD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A674691BD580CF00465CDD /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82A6746D1BD5810700465CDD /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6746C1BD5810700465CDD /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82A674701BD5817600465CDD /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6746F1BD5817600465CDD /* AvatarViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +33,36 @@
 		8214BD701BD526C800DA3B4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8214BD721BD526C800DA3B4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8214BD731BD526C800DA3B4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8214BD751BD526C800DA3B4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8214BD761BD526C800DA3B4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8214BD791BD526C800DA3B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8214BD7B1BD526C800DA3B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8214BD7E1BD526C800DA3B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8214BD801BD526C800DA3B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8214BD861BD56C4200DA3B4F /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		8214BD881BD56C5600DA3B4F /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		8214BD8D1BD56EB100DA3B4F /* SelfieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewController.h; sourceTree = "<group>"; };
+		8214BD8E1BD56EB100DA3B4F /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
+		8214BD901BD56EFA00DA3B4F /* SelfieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieDetailViewController.h; sourceTree = "<group>"; };
+		8214BD911BD56EFA00DA3B4F /* SelfieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieDetailViewController.m; sourceTree = "<group>"; };
+		8214BD931BD5707A00DA3B4F /* SelfieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewCell.h; sourceTree = "<group>"; };
+		8214BD941BD5707A00DA3B4F /* SelfieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewCell.m; sourceTree = "<group>"; };
+		8214BD961BD5781D00DA3B4F /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		8214BD971BD5781D00DA3B4F /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		8214BD991BD5782F00DA3B4F /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		8214BD9A1BD5782F00DA3B4F /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		8214BD9C1BD5784800DA3B4F /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		8214BD9D1BD5784800DA3B4F /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		8214BD9F1BD578A200DA3B4F /* FilterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterDataSource.h; sourceTree = "<group>"; };
+		8214BDA01BD578A200DA3B4F /* FilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterDataSource.m; sourceTree = "<group>"; };
+		8214BDA41BD579AC00DA3B4F /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		8214BDA51BD579AC00DA3B4F /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
+		82A674651BD580AF00465CDD /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		82A674661BD580AF00465CDD /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
+		82A674681BD580CF00465CDD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		82A674691BD580CF00465CDD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		82A6746B1BD5810700465CDD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		82A6746C1BD5810700465CDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		82A6746E1BD5817600465CDD /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		82A6746F1BD5817600465CDD /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				8214BD781BD526C800DA3B4F /* Main.storyboard */,
-				8214BD721BD526C800DA3B4F /* AppDelegate.h */,
-				8214BD731BD526C800DA3B4F /* AppDelegate.m */,
-				8214BD751BD526C800DA3B4F /* ViewController.h */,
-				8214BD761BD526C800DA3B4F /* ViewController.m */,
+				8214BD8C1BD56CF500DA3B4F /* Main Flow */,
+				8214BD861BD56C4200DA3B4F /* Create.storyboard */,
+				8214BD8A1BD56CAB00DA3B4F /* Create Flow */,
+				8214BD881BD56C5600DA3B4F /* User.storyboard */,
+				8214BD8B1BD56CBA00DA3B4F /* User Flow */,
 				8214BD6F1BD526C800DA3B4F /* Supporting Files */,
 			);
 			path = Camera;
@@ -71,12 +109,75 @@
 		8214BD6F1BD526C800DA3B4F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8214BD721BD526C800DA3B4F /* AppDelegate.h */,
+				8214BD731BD526C800DA3B4F /* AppDelegate.m */,
 				8214BD7B1BD526C800DA3B4F /* Assets.xcassets */,
 				8214BD7D1BD526C800DA3B4F /* LaunchScreen.storyboard */,
 				8214BD801BD526C800DA3B4F /* Info.plist */,
 				8214BD701BD526C800DA3B4F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8214BD8A1BD56CAB00DA3B4F /* Create Flow */ = {
+			isa = PBXGroup;
+			children = (
+				8214BD961BD5781D00DA3B4F /* CaptureViewController.h */,
+				8214BD971BD5781D00DA3B4F /* CaptureViewController.m */,
+				8214BD991BD5782F00DA3B4F /* FilterViewController.h */,
+				8214BD9A1BD5782F00DA3B4F /* FilterViewController.m */,
+				8214BDA31BD578FF00DA3B4F /* FIlterView */,
+				8214BD9C1BD5784800DA3B4F /* SubmitViewController.h */,
+				8214BD9D1BD5784800DA3B4F /* SubmitViewController.m */,
+			);
+			name = "Create Flow";
+			sourceTree = "<group>";
+		};
+		8214BD8B1BD56CBA00DA3B4F /* User Flow */ = {
+			isa = PBXGroup;
+			children = (
+				82A674651BD580AF00465CDD /* ChoiceViewController.h */,
+				82A674661BD580AF00465CDD /* ChoiceViewController.m */,
+				82A674681BD580CF00465CDD /* LoginViewController.h */,
+				82A674691BD580CF00465CDD /* LoginViewController.m */,
+				82A6746B1BD5810700465CDD /* RegisterViewController.h */,
+				82A6746C1BD5810700465CDD /* RegisterViewController.m */,
+				82A6746E1BD5817600465CDD /* AvatarViewController.h */,
+				82A6746F1BD5817600465CDD /* AvatarViewController.m */,
+			);
+			name = "User Flow";
+			sourceTree = "<group>";
+		};
+		8214BD8C1BD56CF500DA3B4F /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				8214BD8D1BD56EB100DA3B4F /* SelfieTableViewController.h */,
+				8214BD8E1BD56EB100DA3B4F /* SelfieTableViewController.m */,
+				8214BDA21BD578AB00DA3B4F /* Table View */,
+				8214BD901BD56EFA00DA3B4F /* SelfieDetailViewController.h */,
+				8214BD911BD56EFA00DA3B4F /* SelfieDetailViewController.m */,
+			);
+			name = "Main Flow";
+			sourceTree = "<group>";
+		};
+		8214BDA21BD578AB00DA3B4F /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				8214BD931BD5707A00DA3B4F /* SelfieTableViewCell.h */,
+				8214BD941BD5707A00DA3B4F /* SelfieTableViewCell.m */,
+			);
+			name = "Table View";
+			sourceTree = "<group>";
+		};
+		8214BDA31BD578FF00DA3B4F /* FIlterView */ = {
+			isa = PBXGroup;
+			children = (
+				8214BD9F1BD578A200DA3B4F /* FilterDataSource.h */,
+				8214BDA01BD578A200DA3B4F /* FilterDataSource.m */,
+				8214BDA41BD579AC00DA3B4F /* FilterCollectionViewCell.h */,
+				8214BDA51BD579AC00DA3B4F /* FilterCollectionViewCell.m */,
+			);
+			name = FIlterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +241,8 @@
 				8214BD7F1BD526C800DA3B4F /* LaunchScreen.storyboard in Resources */,
 				8214BD7C1BD526C800DA3B4F /* Assets.xcassets in Resources */,
 				8214BD7A1BD526C800DA3B4F /* Main.storyboard in Resources */,
+				8214BD871BD56C4200DA3B4F /* Create.storyboard in Resources */,
+				8214BD891BD56C5600DA3B4F /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +253,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8214BD771BD526C800DA3B4F /* ViewController.m in Sources */,
+				8214BDA11BD578A200DA3B4F /* FilterDataSource.m in Sources */,
+				8214BD8F1BD56EB100DA3B4F /* SelfieTableViewController.m in Sources */,
+				8214BD921BD56EFA00DA3B4F /* SelfieDetailViewController.m in Sources */,
+				8214BD951BD5707A00DA3B4F /* SelfieTableViewCell.m in Sources */,
 				8214BD741BD526C800DA3B4F /* AppDelegate.m in Sources */,
+				8214BD9E1BD5784800DA3B4F /* SubmitViewController.m in Sources */,
+				8214BDA61BD579AC00DA3B4F /* FilterCollectionViewCell.m in Sources */,
+				8214BD9B1BD5782F00DA3B4F /* FilterViewController.m in Sources */,
+				82A6746A1BD580CF00465CDD /* LoginViewController.m in Sources */,
+				82A6746D1BD5810700465CDD /* RegisterViewController.m in Sources */,
 				8214BD711BD526C800DA3B4F /* main.m in Sources */,
+				8214BD981BD5781D00DA3B4F /* CaptureViewController.m in Sources */,
+				82A674671BD580AF00465CDD /* ChoiceViewController.m in Sources */,
+				82A674701BD5817600465CDD /* AvatarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +413,7 @@
 				8214BD851BD526C800DA3B4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
