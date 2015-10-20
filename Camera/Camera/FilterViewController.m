@@ -10,12 +10,16 @@
 
 @interface FilterViewController ()
 
+
 @end
 
 @implementation FilterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.filterImageView.image = self.originalImage;
+    
     // Do any additional setup after loading the view.
 }
 

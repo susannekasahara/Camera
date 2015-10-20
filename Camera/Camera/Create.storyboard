@@ -16,18 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-UL-Nrg">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-UL-Nrg">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2d-Ti-ubt">
-                                <rect key="frame" x="431" y="496" width="137" height="69"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2d-Ti-ubt">
+                                <rect key="frame" x="468" y="465" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="h2G-bK-hIt"/>
+                                    <constraint firstAttribute="width" constant="100" id="u5S-bf-3hv"/>
+                                </constraints>
                                 <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="nVw-yd-1cI" eventType="touchUpInside" id="L18-56-tpS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dpT-UL-Nrg" firstAttribute="top" secondItem="pF9-GX-UTu" secondAttribute="bottom" id="0e8-II-59i"/>
+                            <constraint firstAttribute="trailing" secondItem="y2d-Ti-ubt" secondAttribute="trailing" constant="32" id="27I-TM-Vyd"/>
+                            <constraint firstItem="rsl-E2-lIe" firstAttribute="top" secondItem="y2d-Ti-ubt" secondAttribute="bottom" constant="35" id="4jb-xE-ffN"/>
+                            <constraint firstAttribute="trailing" secondItem="dpT-UL-Nrg" secondAttribute="trailing" id="Gei-9I-g1v"/>
+                            <constraint firstItem="dpT-UL-Nrg" firstAttribute="leading" secondItem="vD3-QF-k9e" secondAttribute="leading" id="qnE-6t-hB7"/>
+                            <constraint firstItem="rsl-E2-lIe" firstAttribute="top" secondItem="dpT-UL-Nrg" secondAttribute="bottom" id="u7C-Hi-d3S"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bil-KQ-Enr"/>
+                    <connections>
+                        <outlet property="cameraHolderView" destination="dpT-UL-Nrg" id="vFD-UY-Rc4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb5-xc-VHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,6 +89,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="filterImageView" destination="MKm-bl-iEH" id="vPO-u2-z0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z75-An-Hnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,18 +113,24 @@
                                 <rect key="frame" x="40" y="70" width="525" height="262"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-f5-xJi">
-                                <rect key="frame" x="40" y="340" width="525" height="128"/>
+                                <rect key="frame" x="49" y="346" width="525" height="128"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ese-Cn-sqp">
-                                <rect key="frame" x="267" y="509" width="49" height="30"/>
+                                <rect key="frame" x="276" y="521" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitSelfie:" destination="pat-Le-x04" eventType="touchUpInside" id="2xo-mI-2ro"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="captionTextView" destination="YBg-f5-xJi" id="1js-lg-lvh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2k-uF-oL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
