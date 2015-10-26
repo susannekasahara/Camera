@@ -7,31 +7,37 @@
 //
 
 #import "LoginViewController.h"
+#import <Parse/Parse.h>
+
 
 @interface LoginViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *loginUsername;
+@property (weak, nonatomic) IBOutlet UITextField *loginPassword;
+- (IBAction)loginuser:(id)sender;
 
 @end
 
 @implementation LoginViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_blue"]];
+}
+- (void)viewWillAppear:(BOOL)animated {
+        
+        self.navigationController.navigationBarHidden = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)loginuser:(id)sender {
+    
+    
+    [PFUser logInWithUsernameInBackground:self.loginUsername.text password:self.loginPassword.text block:^(PFUser * _Nullable user, NSError * _Nullable error) {
+        
+        if (user != nil) {
+            
+            NSLog(@"logged in");
+        }
+    }];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

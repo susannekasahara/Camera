@@ -14,8 +14,10 @@
 
 @implementation ChoiceViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+
+self.navigationController.navigationBarHidden = YES;
+
     // Do any additional setup after loading the view.
 }
 

@@ -8,11 +8,19 @@
 
 #import "AvatarViewController.h"
 
+
+
 @interface AvatarViewController ()
+
+
+@property (nonatomic) IBInspectable UIColor *someColor;
+
 
 @end
 
 @implementation AvatarViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,31 +7,47 @@
 //
 
 #import "RegisterViewController.h"
+#import <Parse/Parse.h>
 
 @interface RegisterViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *emailaddress;
+
+@property (weak, nonatomic) IBOutlet UITextField *password;
+
 
 @end
 
 @implementation RegisterViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_green"]];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)nextButton:(id)sender {
+    
+    PFUser * user = [PFUser user];
+    
+    user.username = self.userName.text;
+    user.password = self.password.text;
+    user.email = self.emailaddress.text;
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        
+        if (succeeded) {
+            
+            NSLog(@"signed up");
+            
+        }
+            
+        }];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
