@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82DE15EA1BDE5F4D00302E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE15E91BDE5F4D00302E06 /* AppDelegate.swift */; };
+		82DE15F11BDE5F4D00302E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DE15F01BDE5F4D00302E06 /* Assets.xcassets */; };
+		82DE16461BDE621E00302E06 /* SelfieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16411BDE621D00302E06 /* SelfieTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE164F1BDE62D000302E06 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE164C1BDE62D000302E06 /* CaptureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE16501BDE62D000302E06 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE164E1BDE62D000302E06 /* FilterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE165A1BDE630D00302E06 /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16531BDE630D00302E06 /* ChoiceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE165B1BDE630D00302E06 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16551BDE630D00302E06 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE165C1BDE630D00302E06 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16571BDE630D00302E06 /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE165D1BDE630D00302E06 /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16591BDE630D00302E06 /* AvatarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE16651BDE64B600302E06 /* FilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16601BDE64B600302E06 /* FilterDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		82DE16661BDE64B600302E06 /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16621BDE64B600302E06 /* FilterCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		82DE16671BDE64B600302E06 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16641BDE64B600302E06 /* SubmitViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82DE166B1BDE651E00302E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DE16681BDE651E00302E06 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		82DE166C1BDE651E00302E06 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DE16691BDE651E00302E06 /* Create.storyboard */; settings = {ASSET_TAGS = (); }; };
+		82DE166D1BDE651E00302E06 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DE166A1BDE651E00302E06 /* User.storyboard */; settings = {ASSET_TAGS = (); }; };
+		82DE166F1BDE666500302E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DE166E1BDE666500302E06 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		82DE167C1BDE678500302E06 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16711BDE678500302E06 /* libsqlite3.dylib */; settings = {ASSET_TAGS = (); }; };
+		82DE167D1BDE678500302E06 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16721BDE678500302E06 /* libz.1.dylib */; settings = {ASSET_TAGS = (); }; };
+		82DE167E1BDE678500302E06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16731BDE678500302E06 /* SystemConfiguration.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE167F1BDE678500302E06 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16741BDE678500302E06 /* StoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16801BDE678500302E06 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16751BDE678500302E06 /* Security.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16811BDE678500302E06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16761BDE678500302E06 /* CoreLocation.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16821BDE678500302E06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16771BDE678500302E06 /* CoreGraphics.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16831BDE678500302E06 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16781BDE678500302E06 /* CFNetwork.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16841BDE678500302E06 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE16791BDE678500302E06 /* AudioToolbox.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16851BDE678500302E06 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE167A1BDE678500302E06 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16861BDE678500302E06 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE167B1BDE678500302E06 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		82DE16881BDE70E900302E06 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16871BDE70E900302E06 /* settingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16B01BDEA2DE00302E06 /* SelfieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16AF1BDEA2DE00302E06 /* SelfieTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16B21BDEA30700302E06 /* SelfieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16B11BDEA30700302E06 /* SelfieTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16B41BDEA35E00302E06 /* SelfieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16B31BDEA35E00302E06 /* SelfieDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16B61BDEA38900302E06 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16B51BDEA38900302E06 /* ChoiceViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16B81BDEA3AE00302E06 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16B71BDEA3AE00302E06 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16BA1BDEA3D900302E06 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16B91BDEA3D900302E06 /* RegisterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16BC1BDEA3F100302E06 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16BB1BDEA3F100302E06 /* AvatarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16BE1BDEA41900302E06 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16BD1BDEA41900302E06 /* CaptureViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16C01BDEA42D00302E06 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16BF1BDEA42D00302E06 /* FilterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16C21BDEA46100302E06 /* FilterDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16C11BDEA46100302E06 /* FilterDataSourceController.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16C41BDEA48D00302E06 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16C31BDEA48D00302E06 /* FilterCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		82DE16C61BDEA4B600302E06 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE16C51BDEA4B600302E06 /* SubmitViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82DE15E61BDE5F4D00302E06 /* Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DE15E91BDE5F4D00302E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82DE15F01BDE5F4D00302E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82DE15F51BDE5F4D00302E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DE16261BDE61E000302E06 /* ImageEditing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEditing.h; sourceTree = "<group>"; };
+		82DE163F1BDE621D00302E06 /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		82DE16411BDE621D00302E06 /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
+		82DE164B1BDE62D000302E06 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		82DE164C1BDE62D000302E06 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		82DE164D1BDE62D000302E06 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		82DE164E1BDE62D000302E06 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		82DE16521BDE630D00302E06 /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		82DE16531BDE630D00302E06 /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
+		82DE16541BDE630D00302E06 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		82DE16551BDE630D00302E06 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		82DE16561BDE630D00302E06 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		82DE16571BDE630D00302E06 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		82DE16581BDE630D00302E06 /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		82DE16591BDE630D00302E06 /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
+		82DE165F1BDE64B600302E06 /* FilterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterDataSource.h; sourceTree = "<group>"; };
+		82DE16601BDE64B600302E06 /* FilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterDataSource.m; sourceTree = "<group>"; };
+		82DE16611BDE64B600302E06 /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		82DE16621BDE64B600302E06 /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
+		82DE16631BDE64B600302E06 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		82DE16641BDE64B600302E06 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		82DE16681BDE651E00302E06 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		82DE16691BDE651E00302E06 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		82DE166A1BDE651E00302E06 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		82DE166E1BDE666500302E06 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82DE16711BDE678500302E06 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		82DE16721BDE678500302E06 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		82DE16731BDE678500302E06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		82DE16741BDE678500302E06 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		82DE16751BDE678500302E06 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		82DE16761BDE678500302E06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		82DE16771BDE678500302E06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82DE16781BDE678500302E06 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		82DE16791BDE678500302E06 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		82DE167A1BDE678500302E06 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../_resources/Frameworks/Parse/Bolts.framework; sourceTree = "<group>"; };
+		82DE167B1BDE678500302E06 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../_resources/Frameworks/Parse/Parse.framework; sourceTree = "<group>"; };
+		82DE16871BDE70E900302E06 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		82DE16AF1BDEA2DE00302E06 /* SelfieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewController.swift; sourceTree = "<group>"; };
+		82DE16B11BDEA30700302E06 /* SelfieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewCell.swift; sourceTree = "<group>"; };
+		82DE16B31BDEA35E00302E06 /* SelfieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieDetailViewController.swift; sourceTree = "<group>"; };
+		82DE16B51BDEA38900302E06 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		82DE16B71BDEA3AE00302E06 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		82DE16B91BDEA3D900302E06 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		82DE16BB1BDEA3F100302E06 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		82DE16BD1BDEA41900302E06 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		82DE16BF1BDEA42D00302E06 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		82DE16C11BDEA46100302E06 /* FilterDataSourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDataSourceController.swift; sourceTree = "<group>"; };
+		82DE16C31BDEA48D00302E06 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		82DE16C51BDEA4B600302E06 /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82DE15E31BDE5F4D00302E06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DE16811BDE678500302E06 /* CoreLocation.framework in Frameworks */,
+				82DE167D1BDE678500302E06 /* libz.1.dylib in Frameworks */,
+				82DE16831BDE678500302E06 /* CFNetwork.framework in Frameworks */,
+				82DE16801BDE678500302E06 /* Security.framework in Frameworks */,
+				82DE16821BDE678500302E06 /* CoreGraphics.framework in Frameworks */,
+				82DE16851BDE678500302E06 /* Bolts.framework in Frameworks */,
+				82DE16861BDE678500302E06 /* Parse.framework in Frameworks */,
+				82DE16841BDE678500302E06 /* AudioToolbox.framework in Frameworks */,
+				82DE167E1BDE678500302E06 /* SystemConfiguration.framework in Frameworks */,
+				82DE167C1BDE678500302E06 /* libsqlite3.dylib in Frameworks */,
+				82DE167F1BDE678500302E06 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82DE15DD1BDE5F4D00302E06 = {
+			isa = PBXGroup;
+			children = (
+				82DE15E81BDE5F4D00302E06 /* Selfie */,
+				82DE15E71BDE5F4D00302E06 /* Products */,
+				82DE16701BDE66E200302E06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82DE15E71BDE5F4D00302E06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82DE15E61BDE5F4D00302E06 /* Selfie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82DE15E81BDE5F4D00302E06 /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				82DE16681BDE651E00302E06 /* Main.storyboard */,
+				82DE16691BDE651E00302E06 /* Create.storyboard */,
+				82DE166A1BDE651E00302E06 /* User.storyboard */,
+				82DE16871BDE70E900302E06 /* settingsViewController.swift */,
+				82DE15FB1BDE5FBE00302E06 /* ObjC */,
+				82DE165E1BDE63DE00302E06 /* Supporting Files */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		82DE15FB1BDE5FBE00302E06 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				82DE16261BDE61E000302E06 /* ImageEditing.h */,
+				82DE164A1BDE62BF00302E06 /* Creative Flow */,
+				82DE16491BDE626100302E06 /* Main Flow */,
+				82DE16511BDE62F200302E06 /* User Flow */,
+			);
+			name = ObjC;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		82DE16491BDE626100302E06 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				82DE16411BDE621D00302E06 /* SelfieTableViewController.m */,
+				82DE16AF1BDEA2DE00302E06 /* SelfieTableViewController.swift */,
+				82DE16B31BDEA35E00302E06 /* SelfieDetailViewController.swift */,
+				82DE16B11BDEA30700302E06 /* SelfieTableViewCell.swift */,
+			);
+			name = "Main Flow";
+			sourceTree = "<group>";
+		};
+		82DE164A1BDE62BF00302E06 /* Creative Flow */ = {
+			isa = PBXGroup;
+			children = (
+				82DE164B1BDE62D000302E06 /* CaptureViewController.h */,
+				82DE164C1BDE62D000302E06 /* CaptureViewController.m */,
+				82DE16BD1BDEA41900302E06 /* CaptureViewController.swift */,
+				82DE164D1BDE62D000302E06 /* FilterViewController.h */,
+				82DE164E1BDE62D000302E06 /* FilterViewController.m */,
+				82DE16BF1BDEA42D00302E06 /* FilterViewController.swift */,
+				82DE165F1BDE64B600302E06 /* FilterDataSource.h */,
+				82DE16601BDE64B600302E06 /* FilterDataSource.m */,
+				82DE16C11BDEA46100302E06 /* FilterDataSourceController.swift */,
+				82DE16611BDE64B600302E06 /* FilterCollectionViewCell.h */,
+				82DE16621BDE64B600302E06 /* FilterCollectionViewCell.m */,
+				82DE16C31BDEA48D00302E06 /* FilterCollectionViewCell.swift */,
+				82DE16631BDE64B600302E06 /* SubmitViewController.h */,
+				82DE16641BDE64B600302E06 /* SubmitViewController.m */,
+				82DE16C51BDEA4B600302E06 /* SubmitViewController.swift */,
+			);
+			name = "Creative Flow";
+			sourceTree = "<group>";
+		};
+		82DE16511BDE62F200302E06 /* User Flow */ = {
+			isa = PBXGroup;
+			children = (
+				82DE16521BDE630D00302E06 /* ChoiceViewController.h */,
+				82DE16531BDE630D00302E06 /* ChoiceViewController.m */,
+				82DE16B51BDEA38900302E06 /* ChoiceViewController.swift */,
+				82DE16541BDE630D00302E06 /* LoginViewController.h */,
+				82DE16551BDE630D00302E06 /* LoginViewController.m */,
+				82DE16B71BDEA3AE00302E06 /* LoginViewController.swift */,
+				82DE16561BDE630D00302E06 /* RegisterViewController.h */,
+				82DE16571BDE630D00302E06 /* RegisterViewController.m */,
+				82DE16B91BDEA3D900302E06 /* RegisterViewController.swift */,
+				82DE16581BDE630D00302E06 /* AvatarViewController.h */,
+				82DE16591BDE630D00302E06 /* AvatarViewController.m */,
+				82DE16BB1BDEA3F100302E06 /* AvatarViewController.swift */,
+			);
+			name = "User Flow";
+			sourceTree = "<group>";
+		};
+		82DE165E1BDE63DE00302E06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82DE166E1BDE666500302E06 /* LaunchScreen.storyboard */,
+				82DE15E91BDE5F4D00302E06 /* AppDelegate.swift */,
+				82DE163F1BDE621D00302E06 /* Selfie-Bridging-Header.h */,
+				82DE15F01BDE5F4D00302E06 /* Assets.xcassets */,
+				82DE15F51BDE5F4D00302E06 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82DE16701BDE66E200302E06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82DE16711BDE678500302E06 /* libsqlite3.dylib */,
+				82DE16721BDE678500302E06 /* libz.1.dylib */,
+				82DE16731BDE678500302E06 /* SystemConfiguration.framework */,
+				82DE16741BDE678500302E06 /* StoreKit.framework */,
+				82DE16751BDE678500302E06 /* Security.framework */,
+				82DE16761BDE678500302E06 /* CoreLocation.framework */,
+				82DE16771BDE678500302E06 /* CoreGraphics.framework */,
+				82DE16781BDE678500302E06 /* CFNetwork.framework */,
+				82DE16791BDE678500302E06 /* AudioToolbox.framework */,
+				82DE167A1BDE678500302E06 /* Bolts.framework */,
+				82DE167B1BDE678500302E06 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82DE15E51BDE5F4D00302E06 /* Selfie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82DE15F81BDE5F4D00302E06 /* Build configuration list for PBXNativeTarget "Selfie" */;
+			buildPhases = (
+				82DE15E21BDE5F4D00302E06 /* Sources */,
+				82DE15E31BDE5F4D00302E06 /* Frameworks */,
+				82DE15E41BDE5F4D00302E06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Selfie;
+			productName = Selfie;
+			productReference = 82DE15E61BDE5F4D00302E06 /* Selfie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82DE15DE1BDE5F4D00302E06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Susanne Kasahara";
+				TargetAttributes = {
+					82DE15E51BDE5F4D00302E06 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = B547GELX38;
+					};
+				};
+			};
+			buildConfigurationList = 82DE15E11BDE5F4D00302E06 /* Build configuration list for PBXProject "Selfie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82DE15DD1BDE5F4D00302E06;
+			productRefGroup = 82DE15E71BDE5F4D00302E06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82DE15E51BDE5F4D00302E06 /* Selfie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82DE15E41BDE5F4D00302E06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DE15F11BDE5F4D00302E06 /* Assets.xcassets in Resources */,
+				82DE166D1BDE651E00302E06 /* User.storyboard in Resources */,
+				82DE166C1BDE651E00302E06 /* Create.storyboard in Resources */,
+				82DE166F1BDE666500302E06 /* LaunchScreen.storyboard in Resources */,
+				82DE166B1BDE651E00302E06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82DE15E21BDE5F4D00302E06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DE16C21BDEA46100302E06 /* FilterDataSourceController.swift in Sources */,
+				82DE16B01BDEA2DE00302E06 /* SelfieTableViewController.swift in Sources */,
+				82DE16461BDE621E00302E06 /* SelfieTableViewController.m in Sources */,
+				82DE16B21BDEA30700302E06 /* SelfieTableViewCell.swift in Sources */,
+				82DE16C41BDEA48D00302E06 /* FilterCollectionViewCell.swift in Sources */,
+				82DE16B81BDEA3AE00302E06 /* LoginViewController.swift in Sources */,
+				82DE16671BDE64B600302E06 /* SubmitViewController.m in Sources */,
+				82DE16B41BDEA35E00302E06 /* SelfieDetailViewController.swift in Sources */,
+				82DE16C01BDEA42D00302E06 /* FilterViewController.swift in Sources */,
+				82DE165A1BDE630D00302E06 /* ChoiceViewController.m in Sources */,
+				82DE15EA1BDE5F4D00302E06 /* AppDelegate.swift in Sources */,
+				82DE165C1BDE630D00302E06 /* RegisterViewController.m in Sources */,
+				82DE16B61BDEA38900302E06 /* ChoiceViewController.swift in Sources */,
+				82DE16BC1BDEA3F100302E06 /* AvatarViewController.swift in Sources */,
+				82DE16BA1BDEA3D900302E06 /* RegisterViewController.swift in Sources */,
+				82DE16BE1BDEA41900302E06 /* CaptureViewController.swift in Sources */,
+				82DE165D1BDE630D00302E06 /* AvatarViewController.m in Sources */,
+				82DE16C61BDEA4B600302E06 /* SubmitViewController.swift in Sources */,
+				82DE16661BDE64B600302E06 /* FilterCollectionViewCell.m in Sources */,
+				82DE165B1BDE630D00302E06 /* LoginViewController.m in Sources */,
+				82DE16501BDE62D000302E06 /* FilterViewController.m in Sources */,
+				82DE164F1BDE62D000302E06 /* CaptureViewController.m in Sources */,
+				82DE16651BDE64B600302E06 /* FilterDataSource.m in Sources */,
+				82DE16881BDE70E900302E06 /* settingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82DE15F61BDE5F4D00302E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82DE15F71BDE5F4D00302E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82DE15F91BDE5F4D00302E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/susanneburnham/_resources/Frameworks/**";
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sk.Selfie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Selfie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82DE15FA1BDE5F4D00302E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/susanneburnham/_resources/Frameworks/**";
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sk.Selfie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Selfie-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82DE15E11BDE5F4D00302E06 /* Build configuration list for PBXProject "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DE15F61BDE5F4D00302E06 /* Debug */,
+				82DE15F71BDE5F4D00302E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82DE15F81BDE5F4D00302E06 /* Build configuration list for PBXNativeTarget "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DE15F91BDE5F4D00302E06 /* Debug */,
+				82DE15FA1BDE5F4D00302E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82DE15DE1BDE5F4D00302E06 /* Project object */;
+}

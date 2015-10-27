@@ -74,6 +74,7 @@
 		82A6746C1BD5810700465CDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		82A6746E1BD5817600465CDD /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
 		82A6746F1BD5817600465CDD /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
+		82DE16251BDE614800302E06 /* ImageEditing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageEditing.h; path = ../ImageEditing.h; sourceTree = "<group>"; };
 		82EE79111BD67625007FD6A5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		82EE79121BD67625007FD6A5 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		82EE79131BD67625007FD6A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -129,6 +130,7 @@
 		8214BD6E1BD526C800DA3B4F /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				82DE16251BDE614800302E06 /* ImageEditing.h */,
 				8214BD781BD526C800DA3B4F /* Main.storyboard */,
 				8214BD8C1BD56CF500DA3B4F /* Main Flow */,
 				8214BD861BD56C4200DA3B4F /* Create.storyboard */,
