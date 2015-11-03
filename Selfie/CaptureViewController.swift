@@ -7,29 +7,45 @@
 //
 
 import UIKit
+import Parse
 
-class CaptureViewController: UIViewController {
+class CaptureViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        
+                self.picker = UIImagePickerController()
+                self.picker.sourceType = UIImagePickerControllerSourceTypeCamera
+                self.picker.cameraDevice = UIImagePickerControllerCameraDeviceFront
+                self.picker.delegate = self
+                self.picker.showsCameraControls = false
+                self.picker.view.frame = self.cameraHolderView.bounds
+                self.cameraHolderView.addSubview(self.picker.view)
+            }
+            
+            func viewDidLayoutSubviews() {
+                var newFrame: CGRect = self.picker.view.frame
+                newFrame.size.width = newFrame.size.height / 4 * 3
+                newFrame.origin.x = (self.cameraHolderView.frame.size.width - newFrame.size.width) / 2
+                NSLog("%f %f@", newFrame.size.width, newFrame.size.height)
+                self.picker.view.frame = newFrame
+            }
+            
+            @IBAction func takePicture(sender: AnyObject) {
+                self.picker.takePicture()
+            }
+            
+            func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo NSDictionary: ) {
+            }
+            var image: UIImage = info[UIImagePickerControllerOriginalImage]
+            var filterVC: FilterViewController = self.storyboard.instantiateViewControllerWithIdentifier("FilterVC")
+            NSLog("%@", filterVC.filterImageView)
+            filterVC.originalImage = image
+            self.navigationController.pushViewController(filterVC, animated: true)
+            
+            func didReceiveMemoryWarning() {
+                super.didReceiveMemoryWarning()
+            }
 }

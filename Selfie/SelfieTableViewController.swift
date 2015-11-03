@@ -13,49 +13,35 @@ class SelfieTableViewController: UIViewController {
     
     var selfies: [AnyObject] = []
 
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-//        UIBarButtonItem * logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"logout" style:(UIBarButtonItemStylePlain) target:self action:@selector(logout)];
-//        
-//        //self.navigationController.navigationItem.leftBarButtonItem = logoutButton;
-//        
-//        self.navigationItem.rightBarButtonItem = logoutButton;
-//        
-//        selfies = [@[] mutableCopy];
-//        
-//        PFQuery * selfieQuery = [PFQuery queryWithClassName:@"Selfie"];
-//        
-//        [selfieQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
-//        
-//        for (PFObject * selfie in objects) {
-//        
-//        NSLog(@"%@", selfie);[selfies addObject:selfie];
-//        }
-//        
-//        [self.tableView reloadData];
-//        
-//        }];
-
-        
-    }
-
-    
     func logout() {
-        
-        PFUser.logOut()
-        
-//        [PFUser logOut];
-//        
-//        UIStoryboard * userStoryoard = [UIStoryboard storyboardWithName:@"User" bundle:nil];
-//        
-//        UINavigationController * nc = [userStoryoard instantiateInitialViewController];
-//        
-//        [UIApplication sharedApplication].windows[0].rootViewController = nc;
-        
-    }
-    
-    
-
+                PFUser.logOut()
+                let userStoryoard: UIStoryboard = UIStoryboard.storyboardWithName("User", bundle: nil)
+                let nc: UINavigationController = userStoryoard.instantiateInitialViewController()
+                UIApplication.sharedApplication().windows[0].rootViewController = nc
+            }
+            
+            override func viewDidLoad() {
+                super.viewDidLoad()
+                var logoutButton: UIBarButtonItem =
+                self.navigationItem.rightBarButtonItem = logoutButton
+                selfies = [].mutableCopy() as! [AnyObject]
+                var selfieQuery: PFQuery = PFQuery.queryWithClassName("Selfie")
+                selfieQuery.findObjectsInBackgroundWithBlock({(objects: [AnyObject], error: NSErrorPointer) in            for selfie: PFObject in objects {
+                    NSLog("%@", selfie)
+                    selfies.addObject(selfie)
+                    }
+                    self.tableView.reloadData()
+                    
+                })
+            }
+            
+            func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+                NSLog("%@", selfies)
+                return selfies.count
+            }
+            
+            func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+                var cell: SelfieTableViewCell = tableView.dequeueReusableCellWithIdentifier("SelfieCell", forIndexPath: indexPath)
+                return cell
+            }
 }

@@ -9,7 +9,7 @@
 #import "CaptureViewController.h"
 #import "FilterViewController.h"
 
-@interface CaptureViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface CaptureViewController () UINavigationControllerDelegate, UIImagePickerControllerDelegate
 
 @property (weak, nonatomic) IBOutlet UIView *cameraHolderView;
 
@@ -22,8 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //[self.view setNeedsUpdateConstraints];
-    //[]
+    
 
     self.picker = [[UIImagePickerController alloc] init];
     self.picker.sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -39,8 +38,6 @@
    
 }
 
-   // [self setPicker:[[UIImagePickerController alloc] init]];
-   // [self picker].sourceType = UIImagePickerControllerSourceTypeCamera;
 
 - (void)viewDidLayoutSubviews {
     
@@ -81,15 +78,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
